@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinique-Planing</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+      .liste{
+        background-color: white;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.86);
+
+      }
+      .btnDetails{
+        background-color: #01579b;
+        color: white;
+        padding: 1px 10px;
+        border-radius: 2px;
+        border: 0;
+
+      }
+      .btnLogin{
+        background-color: #bf360c;
+        color: white;
+        border: 0;
+      }
+
+      /* .calendar {
+    display: grid;
+    grid-template-columns: 80px repeat(5, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    gap: 1px;
+} */
+
+.days {
+  display: grid;
+    grid-template-columns: 80px repeat(5, 1fr);
+    /* grid-template-rows: repeat(24, 1fr); */
+    gap: 1px;
+}
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+.hour-cell {
+    background-color: lightgray;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.times {
+    display: grid;
+    grid-template-columns: 80px repeat(5, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    gap: 1px;
+}
+
+.event {
+    background-color: lightblue;
+    border: 1px solid blue;
+} 
+.semaine{
+  font-size: 15px;
+  background-color: #004d40;
+  color: aliceblue;
+  padding:  2px 10px;
+  border-radius: 3px;
+}
+.btnSemaine{
+  height: 20px;
+  background-color:transparent;
+  color: aliceblue;
+  border: none;
+  text-decoration: none;
+  
+}
+.planing{
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.86);
+  background-color: aliceblue;
+  border-radius: 3px;
+}
+
+    </style>
+</head>
+<body>
+<div >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="img/logo1.jpg" alt="" width="45px">
+          <a class="navbar-brand" href="#">Synand Clinique</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active bg-secondary rounded-3 text-light bi bi-calendar-week" aria-current="page" href="/planingAdmin"> Planing </a>
+              </li>
+              &nbsp;&nbsp;&nbsp;
+              <li class="nav-item">
+                <a class="nav-link position-relative bi bi-question-square" href="/homeAdmin"> Demande
+                  <% if(result1.length !=0) { %> 
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                       <%= result1.length %> 
+                  </span>
+                  <% } %>
+                </a>
+              </li>
+              &nbsp;&nbsp;&nbsp;
+              <li class="nav-item">
+                <a class="nav-link " href="/histo">Historique</a>
+              </li>
+            </ul>
+            <div>
+                <button class="btn">Admin</button>
+            </div>
+        </t>
+            <a href="/deconnectionAdmin" type="button" class="btn btnLogin bi bi-box-arrow-right" id="btnLogin"> Se deconnecter</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div >
+          <div class="navbar">
+              <div class="navbar-brand titre">
+                  <h3>Planing de la semaine</h3>
+              </div>
+              <div class="row semaine">
+              <div class="col-1">
+                <a href="/SemaineDel1" class="btnSemaine"> - </a>
+              </div>
+              
+                <div class="col text-center">
+                  <% for(i=0; i< resultat3.length;i++) {%>
+                    <%= resultat3[i].debut.toLocaleDateString()%> -
+                    <%= resultat3[i].fin.toLocaleDateString()%>
+                <% }%>
+                </div>
+                <div class="col-1">
+                  <a class="btnSemaine" href="/SemaineAdd1" > + </a>
+                </div>
+              </div>
+          
+            
+          </div>
+          <div class="row text-center">
+            <div class="col "><h3>Lundi</h3>
+              <%  for(i=0;i< resultat.length ; i++ ) {%>
+               <p> <div class="planing"> 
+               <% if(resultat[i].jour == 2){%>
+                  <strong><%=resultat[i].heure%> :</strong> 
+                  <em><%=resultat[i].motif%> </em> 
+               <% }%>
+              </div>
+            </p>
+              
+            <%}%>
+            </div>
+            <div class="col"><h3>Mardi</h3> 
+              <%  for(i=0;i< resultat.length ; i++ ) {%>
+                <p> <div class="planing"> 
+                  <% if(resultat[i].jour == 3){%>
+                     <strong><%=resultat[i].heure%> :</strong> 
+                     <em><%=resultat[i].motif%> </em> 
+                  <% }%>
+                 </div>
+               </p>
+            <%}%>
+            </div>
+            <div class="col"><h3>Mercredi</h3> 
+              <%  for(i=0;i< resultat.length ; i++ ) {%>
+                <p> <div class="planing"> 
+                  <% if(resultat[i].jour == 4){%>
+                     <strong><%=resultat[i].heure%> :</strong> 
+                     <em><%=resultat[i].motif%> </em> 
+                  <% }%>
+                 </div>
+               </p>
+            <%}%>
+            </div>
+            <div class="col"><h3>Jeudi</h3> 
+              <%  for(i=0;i< resultat.length ; i++ ) {%>
+                <p> <div class="planing"> 
+                  <% if(resultat[i].jour == 5){%>
+                     <strong><%=resultat[i].heure%> :</strong> 
+                     <em><%=resultat[i].motif%> </em> 
+                  <% }%>
+                 </div>
+               </p>
+            <%}%>
+            </div>
+            <div class="col"><h3>Vendredi</h3> 
+              <%  for(i=0;i< resultat.length ; i++ ) {%>
+                <p> <div class="planing"> 
+                  <% if(resultat[i].jour == 6){%>
+                     <strong><%=resultat[i].heure%> :</strong> 
+                     <em><%=resultat[i].motif%> </em> 
+                  <% }%>
+                 </div>
+               </p>
+            <%}%>
+            </div>
+            <!-- <div class="col"><h3>Samedi</h3> 
+              <%  for(i=0;i< resultat.length ; i++ ) {%>
+                <p> <div class="planing"> 
+                  <% if(resultat[i].jour == 7){%>
+                     <strong><%=resultat[i].heure%> :</strong> 
+                     <em><%=resultat[i].motif%> </em> 
+                  <% }%>
+                 </div>
+               </p>
+            <%}%>
+            </div> -->
+                
+          </div>
+      </div>
+      </div>
+      </div>
+</div>
+</body>
+<script>
+ var ajourdHui=new Date();
+ var jourSemaine=ajourdHui.getDay();
+ var joursAsoustraire=jourSemaine-1;
+ var debutSemaine=new Date(ajourdHui);
+ debutSemaine.setDate(ajourdHui.getDate()-joursAsoustraire);
+ var finSemaine=new Date(debutSemaine);
+ finSemaine.setDate(debutSemaine.getDate()+5);
+
+//  var otion={weekday}
+ var date=document.getElementById("date");
+ date.textContent=debutSemaine.toLocaleDateString()+"  -  "+finSemaine.toLocaleDateString();
+
+ var btnSuivant=document.getElementById("btnSuivant");
+ var btnPrecedent=document.getElementById("btnPrecendent");
+ 
+ btnSuivant.onclick=function(){
+  // debutSemaine=debutSemaine.getDate()+7;
+  // finSemaine=finSemaine.getDate()+7;
+  // date.textContent=debutSemaine.toLocaleDateString()+"  -  "+finSemaine.toLocaleDateString();
+
+ }
+
+</script>
+</html>

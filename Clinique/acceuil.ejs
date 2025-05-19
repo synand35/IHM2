@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synand</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./style/acceuil.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">     
+        <div class="header">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="titre navbar-brand  ">
+                       <img src="img/logo1.jpg" width="70px" alt=""> Clinique Synand                     
+                    </div>
+                    <!-- <a href="home.html" class="btnLogin">S'autentifier -></a>\ -->
+                    <button type="button" class="btnLogin" id="btnLogin">S'authentifier <em class="bi bi-box-arrow-in-right"></em>
+ </button>
+                    
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            
+            <div class="col-7">
+                <div class="welcome mt-5 rounded-3">
+                    <strong> <h3>Bienvenue sur le site web de notre clinique  <em class="bi bi-emoji-heart-eyes"></em> </h3></strong><br>
+                    <p>Nous somme ravis de vous acceuillir. Pour beneficier d'une experience personnalisee et simplifier la prise de rendez-vous ,nous vous invitons a vous inscrire ou vous identifier. Cela nous permettre de mieux vous assister lors de vos rochaine visite.Merci de votre confience et a bientot</p>
+                    <button class="btn bi bi-pen" type="button" id="openModal"> <strong>S'inscrire</strong></button>
+                </div>
+            </div>
+            <div class="col-4">
+                <strong><h3><p>Présenation</p></h3></strong>
+                <div class="mt-3">
+                    La Synand Clinique a été créée en 2014 avec pour mission principale de fournir des soins médicaux de qualité supèrieure et personnalisés à ses patients.Notre objectif est de promouvoir la santé et le bien-etre de la commmunauté à travers une gammme complete de services médicaus et de soins de santé
+                    <br>
+                    <br>
+
+                    <button class="btn bg-info text-light bi bi-three-dots-vertical" type="button"> voire plus</button> 
+                    <div class="row gx-5 mt-3">
+                       
+                        <div class="col-md-4">
+                            <img src="img/img1.jpg" alt="" width="120px">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/img2.jpg" alt="" width="120px">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/img3.jpg" alt="" width="120px%">
+                        </div>
+                    </div>
+
+                    <div class="row gx-5">
+                        <!-- <div class="col-md-4">
+                            <img src="img/img6.jpg" alt="" width="120px">
+                        </div> -->
+                        <div class="col-md-4">
+                            <img src="img/img4.jpg" alt="" width="120px">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/img5.jpg" alt="" width="120px%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" ">
+        <br><br>
+        <div class="footer border border-1 ">
+            <div class="row ">
+                <div class="col-md-4">
+                    <div class="bi bi-telephone"> 034 35 674 87</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bi bi-envelope">  cliniqueSynand@gmail.com</div>
+                  
+                </div>
+                <div class="col-md-4">
+                   <div class="bi bi-facebook">  Clinique Synand</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+<script>
+    window.onload=function(){
+        const urlParams=new URLSearchParams(window.location.search);
+        const error=urlParams.get('error');
+        const message=urlParams.get('message');
+        const message1=urlParams.get('message1');
+
+        if(error){
+            alert(error)
+        }
+        if(message){
+            alert(message)
+        }
+        if(message1){
+            alert(message1)
+        }
+    }
+</script>
+
+</body>
+
+<!-- Modal pour le registre -->
+<div class="modal" tabindex="-1" id="modalRegister">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Inscrpition</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="closeModalRegister1"></button>
+        </div>
+        <div class="modal-body">
+          <form action="add" method="POST" class="needs-validation" id="FormRegistre" novalidate>           
+                <div class="mb-3">
+                    <label for="validationCustom01" class="form-label">Nom</label>
+                    <input type="text" class="form-control"  name="nom"  placeholder="nom d'utilisateur" required>
+                    <div class="valid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="validationCustom01" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="email"  placeholder="nom d'utilisateur" required>
+                    <div class="valid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="password" name="password"  placeholder="" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Confirmer le passe</label>
+                    <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="" required>
+                </div>
+                    
+                <button type="submit" class="btn btn-primary">S'inscrire</button>
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="closeModalRegister">Fermer</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal pour le login -->
+
+<div class="modal" tabindex="-1" id="modalLogin">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Authentification</h6>
+          <button type="button" class="btn-close text-light" data-bs-dismiss="modal" aria-label="Close" id="closeModalLogin1"></button>
+        </div>
+        <div class="modal-body">
+           <form action="auth" method="post">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Nom</span>
+                <input type="text" class="form-control" name="name" placeholder="nom d'utilisateur" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Mot de passe</span>
+                <input type="password" class="form-control" name="password" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Se connecter</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="closeModalLogin">Fermer</button>
+           </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+    // evenement pour ouvrir le modal de registre
+    var btn= document.getElementById("openModal");
+    var modal= document.getElementById("modalRegister");
+    
+    var btnCloseRegister1=document.getElementById("closeModalRegister1")
+    var btnCloseRegister=document.getElementById("closeModalRegister")
+    btn.onclick=function(){
+        modal.style.display="block";
+    }
+
+    btnCloseRegister1.onclick=function(){
+        modal.style.display="none";
+    }
+    btnCloseRegister.onclick=function(){
+        modal.style.display="none";
+    }
+
+    
+    // evenement pour ouvrir le modal de login
+    var btnLogin=document.getElementById("btnLogin");
+    var modalLogin=document.getElementById("modalLogin");
+
+    btnCloseLogin1=document.getElementById("closeModalLogin1")
+    btnCloseLogin=document.getElementById("closeModalLogin")
+
+    btnLogin.onclick=function(){
+        modalLogin.style.display="block";
+    }
+
+     btnCloseLogin.onclick=function(){
+         modalLogin.style.display="none";
+
+    }
+
+    btnCloseLogin1.onclick=function(){
+         modalLogin.style.display="none";
+
+    }
+    // document.getElementById('FormRegistre').addEventListener('submit',function(envent){
+    //     event.preventDefault();
+    //     var mdp1=document.getElementById('password').value;
+    //     var mdp2=document.getElementById('confirmPassword').value;
+    //     if(mdp1!=mdp2){
+    //         alert("errerur")
+    //     }
+    // })
+</script>
+</html>

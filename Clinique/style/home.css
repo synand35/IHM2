@@ -1,0 +1,22 @@
+body{
+    background-image:url('../pharma.jpg') ;
+    /* background-color: #00695c; */
+
+    background-size: cover;
+}
+.titre{
+    text-align: center;
+    color: #880e4f;
+
+}
+#btnAjouter{
+    padding: 3px 7px;
+    border-radius: 3px ;
+    background-color: #33691e;
+    color: white;
+
+}
+.modal{
+    background-color: rgba(8, 32, 39, 0.801);
+    display: none;
+}

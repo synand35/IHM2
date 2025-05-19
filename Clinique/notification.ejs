@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinique-Notification</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+      .liste{
+        background-color: white;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.86);
+
+      }
+      .btnDetails{
+        background-color: #01579b;
+        color: white;
+        padding: 1px 10px;
+        border-radius: 2px;
+        border: 0;
+
+      }
+      .btnLogin{
+        background-color: #bf360c;
+        color: white;
+        border: 0;
+      }
+      .not{
+        background-color: #006064;
+        color: white;
+        width:50%;
+        font-size: 16px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.50);
+        padding: 5px 20px;
+        margin-left: 20%;
+
+      }
+      .notification{
+        height: 500px;
+        overflow: auto;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="img/logo1.jpg" alt="" width="45px">
+          <a class="navbar-brand" href="#">Synand Clinique</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link bi bi-calendar-week" aria-current="page" href="/planing"> Planing </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bi bi-question-square" href="/home"> Demande</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active bg-secondary rounded-3 text-light bi bi-envelope-exclamation" href="/notification"> Notification</a>
+              </li>
+            </ul>
+            <div>
+                <button class="btn"><%= email %></button>
+            </div>
+        </t>
+            <a href="/deconnection" type="button" class="btn btnLogin bi bi-box-arrow-right" id="btnLogin"> Se deconnecter</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container ">
+      <h3 class="titre">Notification</h3>       
+        <div class="notification">
+          <% for(i=0;i< resultat1.length; i++) {%>
+            <div class="row not mt-1">
+             <div class="toast-header">
+               <strong class="me-auto">Admin</strong>
+               <small><%= resultat1[i].datePasse %> <%= resultat1[i].heurePasse %> </small>
+             </div>
+             <div class="toast-body">
+               <%=resultat1[i].nom %>, votre demande de redez-vous numero <%=resultat1[i].id %> a ete <%=resultat1[i].etat %>r
+             </div>
+            </div>
+         <% } %>
+        </div>            
+      </div>
+
+</body>
+<script>
+
+</script>
+</html>

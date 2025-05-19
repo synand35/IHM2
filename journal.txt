@@ -1,0 +1,248 @@
+#Journal
+18:36:45Administateur connecté admin
+18:36:45Administateur connecté admin
+18:42:37 deconnection admin
+18:42:37  Administateur connecté admin
+18:57:24 deconnection admin
+15/05/2024  18:57:24 Utlisateur connecté herilanto
+19:11:32  Administateur connecté admin
+17/05/2024  22:9:43 Utlisateur Deconnecté 
+17/05/2024  22:9:43 Utlisateur connecté synand
+25/05/2024  16:24:33 Utlisateur connecté synand
+25/05/2024  16:25:5 Utlisateur connecté synand
+25/05/2024  16:26:16 Utlisateur connecté synand
+25/05/2024  16:26:16 Utlisateur connecté synand
+25/05/2024  16:29:13 Utlisateur connecté synand
+25/05/2024  16:31:14 Utlisateur connecté synand
+25/05/2024  16:32:35 Utlisateur connecté synand
+16:32:35  Administateur connecté admin
+16:32:35  Administateur connecté admin
+25/05/2024  16:34:27 Utlisateur connecté synand
+25/05/2024  16:35:40 Utlisateur Deconnecté 
+25/05/2024  16:35:40 Utlisateur connecté synand
+25/05/2024  16:38:56 Utlisateur Deconnecté 
+25/05/2024  16:38:56 Utlisateur connecté synand
+25/05/2024  16:38:56 Utlisateur Deconnecté 
+25/05/2024  16:38:56 Utlisateur connecté herilanto
+25/05/2024  16:48:48 Utlisateur Deconnecté 
+25/05/2024  16:48:48 Utlisateur connecté herilanto
+25/05/2024  16:53:37 Utlisateur Deconnecté 
+25/05/2024  16:53:37 Utlisateur connecté synand
+16:53:37recherche herilanto
+16:53:37recherche 
+25/05/2024  16:53:37 Utlisateur Deconnecté 
+25/05/2024  16:53:37 Utlisateur connecté herilanto
+25/05/2024  17:9:5 Utlisateur Deconnecté 
+25/05/2024  17:9:5 Utlisateur connecté synand
+25/05/2024  17:9:5 Utlisateur Deconnecté 
+25/05/2024  17:9:5 Utlisateur connecté herilanto
+25/05/2024  17:15:22 Utlisateur Deconnecté 
+25/05/2024  17:15:22 Utlisateur connecté synand
+25/05/2024  17:17:22 Utlisateur Deconnecté 
+25/05/2024  17:17:22 Utlisateur connecté herilanto
+25/05/2024  17:19:57 Utlisateur Deconnecté 
+25/05/2024  17:19:57 Utlisateur connecté herilanto
+25/05/2024  17:26:58 Utlisateur Deconnecté 
+25/05/2024  17:26:58 Utlisateur connecté synand
+25/05/2024  17:29:27 Utlisateur Deconnecté 
+25/05/2024  17:29:27 Utlisateur connecté synand
+25/05/2024  17:31:48 Utlisateur Deconnecté 
+25/05/2024  17:31:48 Utlisateur connecté synand
+25/05/2024  17:53:36 Utlisateur Deconnecté 
+25/05/2024  17:53:36 Utlisateur connecté synand
+17:53:36 creation rendez-vous1 Consulation Generale 2024-05-24 08:00
+25/05/2024  17:53:36 Utlisateur Deconnecté 
+25/05/2024  17:53:36 Utlisateur connecté herilanto
+25/05/2024  18:1:37 Utlisateur Deconnecté 
+25/05/2024  18:1:37 Utlisateur connecté synand
+25/05/2024  18:1:37 Utlisateur Deconnecté 
+25/05/2024  18:1:37 Utlisateur connecté synand
+25/05/2024  18:2:56 Utlisateur Deconnecté 
+25/05/2024  18:2:56 Utlisateur connecté herilanto
+25/05/2024  18:6:13 Utlisateur Deconnecté 
+25/05/2024  18:6:13 Utlisateur connecté synand
+26/05/2024  14:26:9 Utlisateur connecté synand
+26/05/2024  14:26:9 Utlisateur Deconnecté 
+14:26:9  Administateur connecté admin
+14:26:9rendez-vous accordé id42
+14:39:43 deconnection admin
+26/05/2024  14:43:29 Utlisateur connecté synand
+14:43:29Administateur connecté login incorrect admin
+14:43:29  Administateur connecté admin
+26/05/2024  14:59:58 Utlisateur connecté herilanto
+14:59:58  Administateur connecté admin
+14:59:58 deconnection admin
+26/05/2024  14:59:58 Utlisateur Deconnecté 
+28/05/2024  10:50:48 Utlisateur connecté synand
+28/05/2024  10:50:48 Utlisateur Deconnecté 
+28/05/2024  10:50:48 Utlisateur Deconnecté 
+28/05/2024  10:56:49 Utlisateur connecté synand
+28/05/2024  10:56:49 Utlisateur Deconnecté 
+28/05/2024  10:57:44 Utlisateur connecté synand
+28/05/2024  10:57:44 Utlisateur Deconnecté 
+28/05/2024  10:59:15 Utlisateur Deconnecté 
+28/05/2024  11:15:17 Utlisateur connecté synand
+28/05/2024  11:15:17 Utlisateur Deconnecté 
+28/05/2024  11:15:17 Utlisateur connecté synand
+28/05/2024  11:15:17 Utlisateur Deconnecté 
+28/05/2024  11:21:49 Utlisateur connecté synand
+28/05/2024  11:21:49 Utlisateur Deconnecté 
+28/05/2024  11:21:49 Utlisateur connecté herilanto
+28/05/2024  11:21:49 Utlisateur Deconnecté 
+11:21:49Administateur connecté login incorrect synand
+11:21:49  Administateur connecté admin
+11:21:49recherche s
+11:21:49recherche synand
+11:21:49recherche herilanto
+11:21:49recherche 
+11:21:49 deconnection admin
+28/05/2024  17:59:51 Utlisateur connecté synand
+28/05/2024  17:59:51 Utlisateur connecté herilanto
+28/05/2024  17:59:51 Utlisateur Deconnecté 
+28/05/2024  17:59:51 Utlisateur Deconnecté 
+28/05/2024  22:38:26 Utlisateur connecté synand
+28/05/2024  22:38:26 Utlisateur Deconnecté 
+28/05/2024  23:3:15 Utlisateur connecté synand
+28/05/2024  23:3:15 Utlisateur Deconnecté 
+28/05/2024  23:3:15 Utlisateur connecté synand
+28/05/2024  23:3:15 Utlisateur Deconnecté 
+23:3:15creation utilisateurMario synand35@gmail.com
+28/05/2024  23:7:49 Utlisateur connecté Mario
+28/05/2024  23:7:49 Utlisateur Deconnecté 
+23:7:49creation utilisateurAndoniaina Andoniaina@gmail.com
+29/05/2024  14:34:43 Utlisateur connecté synand
+29/05/2024  14:34:43 Utlisateur Deconnecté 
+29/05/2024  14:34:43 Utlisateur connecté synand
+29/05/2024  14:34:43 Utlisateur Deconnecté 
+29/05/2024  14:34:43 Utlisateur connecté herilanto
+29/05/2024  14:34:43 Utlisateur Deconnecté 
+14:34:43Administateur connecté login incorrect synand
+14:34:43  Administateur connecté admin
+29/05/2024  14:34:43 Utlisateur connecté synand
+14:34:43 creation rendez-vous1 Consulation Generale 2024-05-16 13:00
+14:34:43rendez-vous accordé id43
+14:34:43 creation rendez-vous1 Consulation Generale 2024-05-17 11:00
+14:34:43rendez-vous accordé id44
+14:34:43 deconnection admin
+29/05/2024  14:34:43 Utlisateur Deconnecté 
+29/05/2024  15:17:27 Utlisateur connecté synand
+15:17:27  Administateur connecté admin
+15:20:17 creation rendez-vous1 Vaccination 2024-05-14 15:00
+15:20:17rendez-vous accordé id45
+29/05/2024  15:20:17 Utlisateur connecté synand
+15:20:17 creation rendez-vous1 Examen de routine 2024-05-14 13:00
+15:20:17rendez-vous accordé id46
+29/05/2024  15:25:14 Utlisateur connecté herilanto
+29/05/2024  15:25:14 Utlisateur Deconnecté 
+30/05/2024  17:11:56 Utlisateur connecté synand
+30/05/2024  19:32:35 Utlisateur connecté synand
+31/05/2024  12:36:20 Utlisateur connecté synand
+12:36:20 creation rendez-vous1 Consulation Generale 2024-05-15 14:00
+31/05/2024  19:11:44 Utlisateur connecté synand
+19:11:44 creation rendez-vous1 Consulation Generale 2024-05-26 10:00
+31/05/2024  19:13:4 Utlisateur connecté synand
+19:13:4 creation rendez-vous1 Consulation Generale 2024-05-26 08:00
+19:13:4 creation rendez-vous1 Consulation Generale 2024-05-25 08:00
+31/05/2024  19:16:11 Utlisateur connecté synand
+19:16:11 creation rendez-vous1 Consulation Generale 2024-05-05 08:00
+19:16:11 creation rendez-vous1 Consulation Generale 2024-05-04 08:00
+19:18:4 creation rendez-vous1 Consulation Generale 2024-05-11 08:00
+31/05/2024  19:18:4 Utlisateur connecté herilanto
+19:18:4 creation rendez-vous2 Consulation Generale 2024-06-01 08:00
+19:19:35 creation rendez-vous2 Consulation Generale 2024-06-02 08:00
+31/05/2024  19:21:0 Utlisateur connecté synand
+31/05/2024  19:39:11 Utlisateur Deconnecté 
+02/06/2024  22:47:10 Utlisateur connecté synand
+02/06/2024  22:47:10 Utlisateur Deconnecté 
+03/06/2024  16:41:56 Utlisateur connecté synand
+16:41:56 deconnection admin
+03/06/2024  16:41:56 Utlisateur connecté synand
+03/06/2024  16:41:56 Utlisateur Deconnecté 
+04/06/2024  14:2:50 Utlisateur connecté synand
+04/06/2024  14:8:3 Utlisateur connecté synand
+04/06/2024  14:8:3 Utlisateur Deconnecté 
+04/06/2024  14:8:3 Utlisateur connecté synand
+11/06/2024  12:51:42 Utlisateur connecté synand
+12/06/2024  21:40:58 Utlisateur connecté synand
+12/06/2024  21:40:58 Utlisateur Deconnecté 
+21:40:58  Administateur connecté admin
+21:40:58rendez-vous accordé id54
+13/06/2024  11:22:16 Utlisateur connecté synand
+11:22:16  Administateur connecté admin
+11:22:16rendez-vous accordé id47
+11:22:16rendez-vous accordé id48
+11:22:16 deconnection admin
+13/06/2024  11:22:16 Utlisateur connecté synand
+13/06/2024  11:22:16 Utlisateur Deconnecté 
+11:22:16  Administateur connecté admin
+11:22:16 deconnection admin
+13/06/2024  11:22:16 Utlisateur connecté synand
+11:22:16 creation rendez-vous1 Examen de routine 2024-06-17 08:00
+11:22:16  Administateur connecté admin
+11:22:16rendez-vous accordé id49
+11:22:16rendez-vous accordé id56
+13/06/2024  14:46:51 Utlisateur connecté synand
+14:46:51 creation rendez-vous1 Consulation Generale 2024-06-18 08:00
+14:46:51rendez-vous accordé id57
+13/06/2024  14:46:51 Utlisateur Deconnecté 
+13/06/2024  14:46:51 Utlisateur connecté herilanto
+14:46:51 creation rendez-vous2 Consulation Generale 2024-06-20 15:00
+14:46:51rendez-vous accordé id58
+13/06/2024  15:2:48 Utlisateur connecté synand
+13/06/2024  15:24:34 Utlisateur connecté synand
+15:24:34 deconnection admin
+15:24:34  Administateur connecté admin
+15:28:34 deconnection admin
+13/06/2024  15:28:34 Utlisateur connecté synand
+15:28:34 creation rendez-vous1 Consulation Generale 2024-06-17 08:00
+15:28:34 creation rendez-vous1 Consulation Generale 2024-06-17 09:00
+15:28:34 creation rendez-vous1 Probleme Specifique 2024-06-17 11:00
+15:28:34 creation rendez-vous1 Consulation Generale 2024-06-17 13:00
+15:28:34  Administateur connecté admin
+15:28:34rendez-vous accordé id62
+15:28:34rendez-vous accordé id61
+15:28:34rendez-vous accordé id60
+15:28:34rendez-vous accordé id59
+13/06/2024  15:28:34 Utlisateur Deconnecté 
+13/06/2024  15:54:36 Utlisateur connecté synand
+15:54:36 creation rendez-vous1 Consulation Specialise 2024-06-18 08:00
+13/06/2024  15:54:36 Utlisateur Deconnecté 
+13/06/2024  15:54:36 Utlisateur connecté herilanto
+15:54:36 creation rendez-vous2 Probleme Specifique 2024-06-11 09:00
+15:54:36 creation rendez-vous2 Consulation Generale 2024-06-18 10:00
+15:54:36 creation rendez-vous2 Consulation Generale 2024-06-18 11:00
+15:54:36 creation rendez-vous2 Suivi medical 2024-06-18 15:00
+15:54:36 creation rendez-vous2 Examen de routine 2024-06-19 08:00
+15:54:36 creation rendez-vous2 Vaccination 2024-06-19 11:00
+15:54:36  Administateur connecté admin
+15:54:36rendez-vous accordé id69
+15:54:36rendez-vous accordé id67
+15:54:36rendez-vous accordé id68
+15:54:36rendez-vous accordé id65
+15:54:36rendez-vous accordé id66
+15:54:36rendez-vous accordé id64
+15:54:36rendez-vous accordé id63
+15:54:36 creation rendez-vous2 Consulation Generale 2024-06-19 09:00
+15:54:36 creation rendez-vous2 Consulation Specialise 2024-06-20 08:00
+15:54:36 creation rendez-vous2 Consulation Generale 2024-06-12 11:00
+15:54:36rendez-vous accordé id72
+15:54:36rendez-vous accordé id71
+15:54:36rendez-vous accordé id70
+15:54:36 deconnection admin
+13/06/2024  15:54:36 Utlisateur Deconnecté 
+13/06/2024  15:54:36 Utlisateur connecté synand
+13/06/2024  15:54:36 Utlisateur Deconnecté 
+13/06/2024  17:30:4 Utlisateur connecté Synand
+13/06/2024  17:30:4 Utlisateur Deconnecté 
+13/06/2024  17:30:4 Utlisateur connecté Synand
+13/06/2024  17:30:4 Utlisateur Deconnecté 
+13/06/2024  17:30:4 Utlisateur connecté Synand
+17/06/2024  16:11:55 Utlisateur connecté Synand
+17/06/2024  16:11:55 Utlisateur Deconnecté 
+17/06/2024  16:11:55 Utlisateur connecté Synand
+17/06/2024  16:11:55 Utlisateur Deconnecté 
+16:11:55  Administateur connecté admin
+16:11:55 deconnection admin
+17/06/2024  16:11:55 Utlisateur connecté Synand
+17/06/2024  21:36:8 Utlisateur connecté synand
+21:36:8 creation rendez-vous1 Consulation Generale 2024-06-20 09:00

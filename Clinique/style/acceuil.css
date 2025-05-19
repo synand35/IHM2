@@ -1,0 +1,68 @@
+body{
+    background-image:url('../pharma.jpg') ;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+.welcome{
+    width: 500px;
+    color: rgb(20, 13, 13);
+    padding: 20px 40px;
+    background-color: #c5daddd5;
+    margin-top: 50px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.86);
+}
+/* .btn{
+    background: chartreuse;
+    padding: 6px 30px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+} */
+.btnLogin{
+    background-color:#8eb621de;
+    border: 0;
+    padding: 5px 20px;
+    color:#33691e;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    clip-path: polygon(10% 0%,100% 0%,90% 100%,0% 100%);
+}
+.navbar-brand{
+    font-size: 30px;
+    color: #62ffda;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+.image{
+    margin-top: 5px;
+}
+.modal{
+    background-color: rgba(8, 32, 39, 0.801);
+    display: none;
+}
+.modal-content{
+    /* background-color: #1a227e62; */
+    /* background-color: rgba(255, 235, 205, 0.253); */
+    color: black;
+}
+#closeModal{
+    background-color: rgba(0, 0, 0, 0.87);
+    padding: 3px 5px;
+    color: white;
+    /* width: 20px; */
+    border: 0;
+    border-radius: 2px;
+}
+.footer{
+    z-index: 1;
+    background-color:#3051f36e;
+    text-align: center;
+    padding: 20px 5px;
+    color: black;
+}
+.titre{
+    color: #00895c;
+}

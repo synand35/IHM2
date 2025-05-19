@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinique-Demande</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+      .liste{
+        background-color: white;
+        padding: 10px 2px;
+      }
+      .btnLogin{
+        background-color: #bf360c;
+        color: white;
+        border: 0;
+      }
+      .btnDetails{
+        background-color: #01579b;
+        color: white;
+        padding: 1px 4px;
+        border-radius: 2px;
+
+      }
+      .btnRefuser{
+        background-color: #b71c1c;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 2px;
+        border: 0;
+      }
+      .btnAccorder{
+        background-color: #1b5e20;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 2px;
+        border: 0;
+      }
+      #modalDetails{
+        display: none;
+      }
+      .table-responsive{
+        overflow: auto;
+        height:auto;
+      }
+      thead{
+        position: sticky;
+      }
+      tbody{
+        overflow-y: auto;
+        height: auto;
+      }
+      .bntCloseSearch{
+        background-color: transparent;
+        border: 0;
+        color: red;
+      }
+      .btnSearch{
+        background-color: #01579b;
+        border: none;
+        border-radius: 2px;
+        padding: 2px 10px;
+        color: white;
+      }
+    </style>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+<div >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <img src="img/logo1.jpg" alt="" width="45px">
+          <a class="navbar-brand" href="#">Synand Clinique</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active bi bi-calendar-week" aria-current="page" href="/planingAdmin"> Planing </a>
+              </li>
+              &nbsp;&nbsp;&nbsp;
+              <li class="nav-item">
+                <a class="nav-link position-relative bg-secondary rounded-3 text-light bi bi-question-square" href="/homeAdmin"> Demande 
+                  <% if(result.length !=0) { %> 
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                       <%= result.length %> 
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <% } %>
+                </a>
+              </li>
+              &nbsp;&nbsp;&nbsp;
+              <li class="nav-item">
+                <a class="nav-link" href="/histo">Historique</a>
+              </li>
+            </ul>
+            <div>
+              <button class="btn">Admin</button>
+          </div> 
+            <a href="/deconnectionAdmin" type="button" class="btn btnLogin bi bi-box-arrow-right" id="btnLogin"> Se deconnecter</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+          <div >
+            <div class="navbar">
+                <div class="navbar-brand titre">
+                    <h3>Demande en attente</h3>
+                </div>
+                <form action="Search" method="post" class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Recherche" name="search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Chercher</button>
+                </form>
+                <!-- <button></button> -->
+            </div>
+            
+
+        </div>
+        <div class="table-responsive"> 
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Num rdv</th>
+            <th scope="col">Demandeur</th>
+            <th scope="col">Date de rdv</th>
+            <th scope="col">Heure de rdv</th>
+            <th scope="col">Motif</th>
+            <th scope="col">Etat</th>
+            <th style="display: none;">idUser</th>
+            <th style="display: none;">email</th>
+            <th style="display: none;">date1</th>
+            <th style="display: none;">heure1</th>
+            <th style="display: none;">date2</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+                <%for(i=0;i< result.length;i++){ %>
+          <tr>
+            <th scope="row"><%=i+1%></th>
+            <td><%= result[i].id %></td>
+            <td> <%= result[i].nom %></td>
+            <td><%= result[i].date %></td>
+            <td><%= result[i].heure %></td>
+            <td><%= result[i].motif %></td>
+            <td><%= result[i].etat %></td>
+            <td style="display: none;"><%= result[i].idUser %></td>
+            <td style="display: none;"><%= result[i].email %></td>
+            <td style="display: none;"><%= result[i].date1 %></td>
+            <td style="display: none;"><%= result[i].heure1 %></td>
+            <td style="display: none;"><%= result[i].date2 %></td>
+            <td> <button class="btnDetails" type="submit">Details</button></td>
+          </tr>
+                <% } %>
+        </tbody>
+    </table>
+    </div>
+        
+        
+      </div>
+</div>
+<!-- Modal pour le Details -->
+
+<div class="modal" tabindex="-1" id="modalDetails">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title">Details</h6>
+        <button type="button" class="btn-close text-light" data-bs-dismiss="modal" aria-label="Close" id="closeModalDetails"></button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+            <div class="col"><strong>Numero du rendez-vous :</strong></div>
+            <div class="col">
+              <div id="numero"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"><strong>Demandeur :</strong> </div>
+            <div class="col"><div id="numCli"></div></div>
+          </div>
+          <div class="row">
+            <div class="col"><strong>Numero :</strong></div>
+            <div class="col"><div id="idUser"></div></div>
+          </div>
+          <div class="row">
+            <div class="col"><strong>Date de rendez-vous :</strong> </div>
+            <div class="col">
+              <div id="date"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"><strong>Heure de rendez-vous :</strong></div>
+            <div class="col">
+               <div  id="heure"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"><strong>Motif :</strong></div>
+           <div class="col">
+            <div id="motif"></div>
+           </div>
+          </div>
+          <div class="row">
+            <div class="col"><strong>Etat :</strong></div>
+           <div class="col">
+            <div id="etat"></div>
+           </div>
+          </div>
+          <div class="row">
+            <div class="col"><strong>Email :</strong></div>
+            <div class="col">
+            <div id="email"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col"><strong>Date de deposition :</strong></div>
+            <div class="col"><div id="date1"></div></div>
+          </div>
+          <div class="row">
+            <div class="col"><strong>Heure de deposition :</strong> </div>
+            <div class="col"><div id="heure1"></div> </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col"><strong>Heure de deposition :</strong> </div>
+            <div class="col"><div id="date2"></div> </div>
+          </div> -->
+      </div>
+      
+      <div class="model-footer"> 
+        <div class="row"> 
+          <div class="col-3"></div>
+          <div class="col-3">
+            <form action="Accorder" method="post">
+              <input type="text" style="display: none;" name="id" id="champId" >
+              <button class="btn btnAccorder" type="submit">Accorder</button>
+            </form>
+
+          </div>
+          <div class="col-3">
+            <form action="Refuser" method="post">
+              <input type="text" style="display: none;" name="id" id="champId2" >
+              <button class="btn btnRefuser" type="submit">Refuser</button>
+            </form>
+          </div>
+          <div class="col-3"></div>
+        </div> 
+        <br>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="closeModalLogin">Fermer</button> -->
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  // var nomModal=document.getElementsByClassName('num');
+
+var btnDetails=document.getElementsByClassName("btnDetails");
+var modalDetails=document.getElementById("modalDetails");
+var closeModalDetails=document.getElementById("closeModalDetails");
+ for(i=0;i<btnDetails.length;i++){
+  btnDetails[i].onclick=function(){
+                      modalDetails.style.display="block";
+                        var row = $(this).closest("tr");
+                        var cells = row.find("td");
+                        // Tableau pour stocker les valeurs de toutes les cellules
+                        var valeursCellules = [];
+        
+                        // Itérer sur les cellules et stocker les valeurs
+                        cells.each(function(index) {
+                            var contenuCellule = $(this).text();
+                            // Stocker la valeur dans le tableau valeursCellules
+                            valeursCellules[index] = contenuCellule;
+                        });
+        
+                        // Accéder aux valeurs individuelles
+                        var idRdv = valeursCellules[0];
+                        var idClient = valeursCellules[1];
+                        var date = valeursCellules[2];
+                        var heure = valeursCellules[3];
+                        var motif = valeursCellules[4];
+                        var etat = valeursCellules[5];
+                        var IdUser = valeursCellules[6];
+                        var email = valeursCellules[7];
+                        var date1 = valeursCellules[8];
+                        var heure1 = valeursCellules[9];
+                        var date2 = valeursCellules[10];
+        
+                        $("#champId").val(idRdv);
+                        $("#champId2").val(idRdv);
+                       document.getElementById("numero").innerHTML=idRdv;
+                       document.getElementById("numCli").innerHTML=idClient;
+                       document.getElementById("date").innerHTML=date;
+                       document.getElementById("heure").innerHTML=heure;
+                       document.getElementById("etat").innerHTML=etat;
+                       document.getElementById("idUser").innerHTML=IdUser;
+                       document.getElementById("email").innerHTML=email;
+                       document.getElementById("motif").innerHTML=motif;
+                       document.getElementById("date1").innerHTML=date1;
+                       document.getElementById("heure1").innerHTML=heure1;
+                       document.getElementById("date2").innerHTML=date2;
+
+                       console.log(email)
+
+
+                        
+
+                        // $("#champNum").val(TabNum);
+                        // $("#champNom").val(TabNom);
+                        // $("#champMath").val(TabMath);
+                        // $("#champSpc").val(TabSpc);
+  }
+}
+closeModalDetails.onclick=function(){
+  modalDetails.style.display="none";
+}
+</script>
+</html>
